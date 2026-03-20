@@ -16,6 +16,24 @@ if not valid then
     return
 end
 
+-- ✅ Key System
+local VALID_KEYS = {
+    "IMPACT-NAHE1452-5G",
+    "IMPACT-NAHE2863-7K",
+    "IMPACT-NAHE3974-2X",
+}
+
+local userKey = getgenv().KEY or ""
+local valid = false
+for _, k in ipairs(VALID_KEYS) do
+    if k == userKey then valid = true break end
+end
+
+if not valid then
+    error("❌ Key ไม่ถูกต้อง! ติดต่อ IMPACTlazy เพื่อขอ Key")
+    return
+end
+
 -- ✅ Anti-Detect
 local RunService = game:GetService("RunService")
 local count = 0
