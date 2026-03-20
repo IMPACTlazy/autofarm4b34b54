@@ -1447,6 +1447,7 @@ local v162 = loadstring(game:HttpGet("https://raw.githubusercontent.com/VanciSon
         Theme = 9542022979,
         Version = 4
     })
+local impacthub = rcchub
 if v162 then
     impacthub("Loading Script, Please Wait...")
 end
